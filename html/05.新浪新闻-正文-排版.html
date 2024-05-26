@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 字符集 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>焦点访谈：中国底气 新思想夯实大国粮仓</title>
+
+    <!-- 方式二：css的内嵌样式 -->
+    <!-- 使用标签来选中，并且指定对应的样式 -->
+
+    <!-- 三种选择器都选中同一东西时，id选择器的优先级最高，其次是类选择器，最后是元素选择器。 -->
+    <style>
+        h1 {
+            color: red;
+        }
+
+        /* 元素选择器
+        span {
+            color: #96BD92;
+        } */
+
+        /* 类选择器
+        .cls {
+            color: #96BD92;
+        } */
+
+        /* id选择器。id只有一个 */
+        #time {
+            color: #968D92;
+            font-size: 13px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            /*设置为一个标准的文本，没有下划线*/
+        }
+
+        /* 首行缩进的效果 */
+        p {
+            text-indent: 35px;
+            line-height: 40px;
+        }
+
+        /* 责任编辑靠右对齐 */
+        #plast {
+            text-align: right;
+        }
+    </style>
+
+
+    <!-- 方式三：外联方式 -->
+    <!-- 在文件夹下新建一个css文件，将代码编写在里面 -->
+    <!-- <link rel="stylesheet" href="./css/news.css"> -->
+
+</head>
+
+<body>
+    <!-- img标签：src表示路径。width表示宽度。height表示高度。 -->
+    <!-- 路径分为绝对路径和相对路径 -->
+    <img src="./img/news_logo.png"> <a href="www.baidu.com" target="_self">新浪政务</a> >正文
+
+    <!-- 方式一：直接引入 -->
+    <!-- <h1 style="color: red;">h1一级标题是最大的。一共有多级标题</h1> -->
+    <h1>焦点访谈：中国底气 新思想夯实大国粮仓</h1>
+    <!-- 可以使用<hr>标签加入一条横线 -->
+    <hr>
+    <span class="cls" id="time">2023年03月02日 21:50</span> <span><a href="www.baidu.com" target="_blank">央视网</a></span>
+    <hr>
+
+    <!-- 正文 -->
+    <!-- 视频 -->
+    <!-- controls用于显示播放界面，使得视频可以播放 -->
+    <video src="./video/1.mp4" controls></video>
+
+    <!-- 音频 -->
+    <!-- controls用于显示音频播放界面，用于播放音频 -->
+    <!-- <audio src="./audio/1.mp3" controls></audio> --> -->
+
+    <p><b>xxxxxxx消息，加粗了</b>这里需要使用换行。</p>
+    <br>
+    <p>上面已经将段落包括在p标签中，并且使用了br进行行</p>
+
+    <img src="./img/1.jpg">
+    <p>插入图片1</p>
+    <img src="./img/2.jpg">
+    <p>插入图片2</p>
+
+    <!-- 需要靠右对齐 -->
+    <p id="plast">责任编辑</p>
+
+</body>
+
+</html>
