@@ -19,9 +19,28 @@
 
 
         //类型转换-其余类型转换为数字
+        //字符串类型转化为数字类型
         alert(parseInt("12"));
         alert(parseInt("12A45"));
         alert(parseInt("A45"));
+
+
+
+        //其余类型转化为boolean类型
+        //Number:0和NAN为false，其余均转化为true
+        //String:空字符串为false，其余均转化为true
+        //Null和undefined:均转化为false
+        if (0) {//false
+            alert("0 转换为fale");
+        }
+        if (NAN) {//false
+            alert("NAN 转换为false");
+        }
+        if (-1) {//true
+            alert("除去0和NAN其他数字都转化为true");
+        }
+
+
 
     </script>
 </body>
