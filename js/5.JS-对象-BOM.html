@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //获取
+        //window.alert("hello BOM");
+        //alert("hello bom window");
+
+        //方法
+        //confirm-对话框
+        //对话框中点击确认，返回true，点击取消，返回false
+        // var flag = confirm("是否删除这个记录");
+        // alert(flag);
+
+
+        //定时器-setInterval-周期性的执行某一个函数
+        //这里会周期性的执行这个函数，执行的实践间隔是2s一次。
+        // var i = 0;
+        // setInterval(function () {
+        //     i++;
+        //     console.log("定时器执行了" + i + "次");
+        // }, 2000);
+
+
+        //定时器-setTimeout--延迟指定时间执行一次代码
+        // setTimeout(function () {
+        //     console.log("延迟执行成功");
+        // }, 3000);
+
+
+
+        //location地址栏问题
+        //获取地址栏的url信息
+        alert(location.href);
+
+        //对地址栏附上信息，附上对应的网站地址。首先获取当前地址，当我们点击确定之后，就会自动跳转到这个域名中
+        location.href = "https://www.baidu.com";
+
+    </script>
+</body>
+
+</html>
