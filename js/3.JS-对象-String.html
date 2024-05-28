@@ -11,11 +11,27 @@
     <script>
         //创建字符串对象
         // var str = new String("Hello String");
-        var str = "hello string";
+        var str = "  hello string  ";
         console.log(str);
 
         //字符串属性问题，length
         console.log(str.length);
+
+        //charAt,获取索引字符为3的字符串
+        console.log(str.charAt(3));
+
+        //indexOf主要用于检索字符串位置
+        console.log(str.indexOf("lo"));
+
+        //去除字符串左右两边空格，并且返回一个新的字符串
+        var s = str.trim();
+        console.log(s);
+
+        //截取字符串，包含开始索引和结束索引
+        //这种做法事含头不含尾的
+        //也就是说，如果结束索引是4的话，4这个索引对应的字符串是不含在这里的
+        console.log(s.substring(0, 4));
+
 
     </script>
 </body>
