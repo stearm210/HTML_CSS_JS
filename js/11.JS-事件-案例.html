@@ -10,7 +10,7 @@
 
 <body>
 
-    <img id="light" src="img/off.gif"> <br>
+    <img id="light" src="../img/off.gif"> <br>
 
     <input type="button" value="点亮" onclick="on()">
     <input type="button" value="熄灭" onclick="off()">
@@ -38,7 +38,7 @@
         var img = document.getElementById("light");
 
         //b. 设置src属性
-        img.src = "img/on.gif";
+        img.src = "../img/on.gif";
     }
 
     function off() {
@@ -46,7 +46,7 @@
         var img = document.getElementById("light");
 
         //b. 设置src属性
-        img.src = "img/off.gif";
+        img.src = "../img/off.gif";
     }
 
 
@@ -78,7 +78,7 @@
         //b. 设置选中状态
         for (let i = 0; i < hobbys.length; i++) {
             const element = hobbys[i];
-            element.checked = true;
+            element.checked = true;//全选状态true
         }
 
     }
@@ -90,7 +90,7 @@
         //b. 设置未选中状态
         for (let i = 0; i < hobbys.length; i++) {
             const element = hobbys[i];
-            element.checked = false;
+            element.checked = false;//全选状态消除，即没有选择任何选项的状态
         }
     }
 

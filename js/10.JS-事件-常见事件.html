@@ -54,32 +54,36 @@
         console.log("我被点击了...");
     }
 
-    //onblur: 失去焦点事件
+    //onblur: 失去焦点事件//其实就是当鼠标不再输入框中时(没有光标在输入框中闪动时)
     function bfn() {
         console.log("失去焦点...");
     }
 
-    //onfocus: 元素获得焦点
+    //onfocus: 元素获得焦点(鼠标在输入框中，光标在输入框中闪动时)
     function ffn() {
         console.log("获得焦点...");
     }
 
     //onkeydown: 某个键盘的键被按下
+    //在输入框中输入数据会显示键盘的键被按下事件
     function kfn() {
         console.log("键盘被按下了...");
     }
 
     //onmouseover: 鼠标移动到元素之上
+    //这里绑定了鼠标移动到表格中的函数。只有鼠标移动到表格中才会显示问题
     function over() {
         console.log("鼠标移入了...")
     }
 
     //onmouseout: 鼠标移出某元素
+    //这里绑定了鼠标移动到表格中的函数。只有鼠标移动到表格中才会显示问题
     function out() {
         console.log("鼠标移出了...")
     }
 
     //onsubmit: 提交表单事件
+    //点击提交按钮才会出现问题
     function subfn() {
         alert("表单被提交了...");
     }

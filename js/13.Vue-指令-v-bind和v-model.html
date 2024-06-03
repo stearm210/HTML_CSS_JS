@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../vue_data/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <a v-bind:href="url">链接1</a>
+        <a :href="url">链接2</a>
+
+        <!-- 输入框使用v-model连接url，使得输入框中有url的网址，并且这个网址可以被更改 -->
+        <input type="text" v-model="url">
+</body>
+<script>
+    //定义vue对象
+    new Vue({
+        el: "#app",//vue接管区域
+        data: {
+            url: "https://www.baidu.com"
+        }
+    })
+</script>
+
+</html>

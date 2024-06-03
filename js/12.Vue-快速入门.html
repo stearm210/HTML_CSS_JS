@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 1.引入vue.js，其实就是引入vue框架 -->
+    <script src="../vue_data/vue.js"></script>
+</head>
+
+<body>
+    <!-- 3.编写视图层 -->
+    <!-- id=app表示vue接管这个区域 -->
+    <div id="app">
+        <input type="text" v-model="message">
+        <!-- 将数据模型展开 -->
+        {{message}}
+        <!-- {{ }} 用于输出对象属性和函数返回值。{{ message }} 对应应用中 message 的值。这里的message中的值为"hello Vue""-->
+    </div>
+</body>
+<script>
+    //2.定义vue对象
+    new Vue({
+        el: "#app",//vue接管区域，相当于id定位app区域
+
+        // data内是已经被定义好的变量的取值
+        data: {
+            message: "Hello Vue"
+        }
+    })
+</script>
+
+</html>
