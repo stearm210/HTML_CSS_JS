@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 这里的代码探究的是弹窗问题。当鼠标移动到某些按钮上时，将会弹出怎样的界面 -->
+
+<body>
+    <input type="button" id="btn1" value="事件绑定1" onclick="on()"> //鼠标点击这个按钮之后会调用哪个函数
+    <input type="button" id="btn2" value="事件绑定2">
+</body>
+<script>
+    //第一种第一方式
+    function on() {
+        alert("按钮一被点击了...");
+    }
+
+    //第二种第一方式
+    //使用id选择器调用onclick方法，之后编写并且调用函数
+    document.getElementById('btn2').onclick = function () {
+        alert("按钮二被点击了...");
+    }
+</script>
+
+</html>

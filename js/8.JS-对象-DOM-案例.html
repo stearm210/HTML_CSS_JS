@@ -4,12 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS-对象-DOM-案例</title>
+    <title>document</title>
 </head>
 
 <body>
     <img id="h1" src="/img/off.gif"> <br><br>
+    <div class="cls">传智教育</div> <br>
+    <div class="cls">黑马程序员</div> <br>
+    <input type="checkbox" name="hobby">电影
+    <input type="checkbox" name="hobby">旅游
+    <input type="checkbox" name="hobby">游戏
 
 </body>
+
+<script>
+    //1.点亮灯泡。这里的点亮操作主要是改变src属性值选取的图片
+    var img = document.getElementById('h1');
+    img.src = "/img/on.gif";
+
+    //2.将所有div标签的内容后面加上：very good红色
+    //获取所有的div标签
+    var divs = document.getElementsByName('div');
+    for (let i = 0; i < divs.length; i++) {
+        const div = divs[i];
+        div.innerHTML += "<font color='red'>very good</font>";//div标签内容后面加上very good字体
+    }
+
+
+    //3.使所有复选框为选中状态
+    var ins = document.getElementsByName('hobby');
+    for (let i = 0; i < ins.length; i++) {
+        const check = ins[i];
+        check.checked = true;//选中状态
+    }
+
+
+</script>
 
 </html>
