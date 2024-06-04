@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 导入vue.js程序包 -->
     <script src="../vue_data/vue.js"></script>
 </head>
 
 <body>
     <div id="app">
+        <!-- 这里用两个框包裹住是为了循环输出这个addr数组。主要是为了方便 -->
         <div v-for="addr in addrs">{{addr}}</div>
 
         <hr>
 
+        <!-- 这里输出的是编号：数组内容 -->
         <div v-for="(addr,index) in addrs">{{index}} : {{addr}}</div>
     </div>
 </body>
