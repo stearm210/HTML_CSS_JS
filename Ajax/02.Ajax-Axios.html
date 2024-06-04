@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="Axios/axios-0.18.0.js"></script>
 </head>
 
 <body>
@@ -14,10 +15,29 @@
 </body>
 <script>
     function get() {
-
+        //通过axios发送异步请求
+        // 发回来的数据使用then方法接收
+        axios({
+            // 这里的method指的是方法
+            //url表示使用这个方法时，会跳转到的网页
+            method: "get",
+            url: "http://yapi.smart-xwork.cn/mock/169327/emp/list"
+        }).then(result => {
+            // 这里输出返回数据result中的data属性
+            console.log(result.data);
+        })
     }
     function post() {
-
+        //通过axios发送异步请求-post
+        axios({
+            // 这里的method指的是方法
+            //url表示使用这个方法时，会跳转到的网页
+            method: "post",
+            url: "http://yapi.smart-xwork.cn/mock/169327/emp/list"
+        }).then(result => {
+            // 这里输出返回数据result中的data属性
+            console.log(result.data);
+        })
     }
 </script>
 
