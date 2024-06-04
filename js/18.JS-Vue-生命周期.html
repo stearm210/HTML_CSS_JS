@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../vue_data/vue.js"></script>
+</head>
+
+<body>
+    <div id="" app>
+
+    </div>
+</body>
+<script>
+    //定义vue对象
+    new Vue({
+        el: "#app",//vue接管区域
+        data: {
+
+        },
+        methods: {
+
+        },
+        // 生命周期方法
+        // 这个方法是自动调用的
+        mounted() {
+            alert("vue挂载完成，发送请求到服务端，加载数据。其实就是vue初始化完成，HTML页面渲染成功");
+        },
+    })
+</script>
+
+</html>
