@@ -33,7 +33,8 @@
             // 这里的method指的是方法
             //url表示使用这个方法时，会跳转到的网页
             method: "post",
-            url: "http://yapi.smart-xwork.cn/mock/169327/emp/list"
+            url: "http://yapi.smart-xwork.cn/mock/169327/emp/list",
+            data: "id=1"
         }).then(result => {
             // 这里输出返回数据result中的data属性
             console.log(result.data);
